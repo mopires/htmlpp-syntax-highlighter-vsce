@@ -48,7 +48,7 @@
 				"patterns": [{
 					"name": "variable.other.property",
 					"match":
-					"\\b(charset|class|href|id|label|src|value|type|placeholder)\\b"
+					"\\b(keywords|description|class|href|id|label|src|value|type|placeholder)\\b"
 					
 				}]
 			}
