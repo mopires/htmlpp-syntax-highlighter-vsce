@@ -6,6 +6,9 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#namespace"
+		},
+		{
 			"include": "#strings"
 		},
 		{
@@ -18,10 +21,17 @@
 			"patterns": [{
 				"name": "keyword.control.htmlpp",
 				"match":
-				"\\b(html|head|closehead|title|meta|style|body|closebody|div|closediv|a|button|input|p|javascript)\\b"
+				"\\b(title|meta|style|div|closediv|a|button|input|p|javascript)\\b"
 				
 			}]
 			
+		},
+		"namespace":{
+			"patterns": [{
+				"name": "entity.name.class.htmlpp",
+				"match": "\\b(html|head|closehead|body|closebody|closehtml)\\b"
+			}]
+
 		},
 		"strings": {
 				"name": "string.quoted.double.htmlpp",
