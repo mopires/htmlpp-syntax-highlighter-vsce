@@ -1,0 +1,52 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "htmlpp",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#properties"
+		}
+
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.htmlpp",
+				"match":
+				"\\b(html|head|closehead|title|meta|style|body|closebody|div|closediv|a|button|input|p|javascript)\\b"
+				
+			}]
+			
+		},
+		"strings": {
+				"name": "string.quoted.double.htmlpp",
+				"begin": "\"|\\'",
+				"end": "\"|\\'",
+				"patterns": [
+					{
+						"name": "constant.character.escape.htmlpp",
+						"match": "\\\\."
+					}
+				]
+			},
+			"properties": {
+				"patterns": [{
+					"name": "variable.other.property",
+					"match":
+					"\\b(charset|class|href|id|label|src|value|type|placeholder)\\b"
+					
+				}]
+			}
+	},
+	"semanticTokenColors": {
+		"variable.other.property": {
+			"foreground":"#3358ff"
+		}
+	},
+	"scopeName": "*.htmlpp"
+}

@@ -1,0 +1,27 @@
+{
+    "name": "htmlpp",
+    "displayName": "htmlpp",
+    "description": "Modern way to write HTML. The concept remains the same, but without the \"< > </>\", like Sass, but different.",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "htmlpp",
+            "aliases": ["htmlpp", "htmlpp"],
+            "extensions": [".htmlpp",".html++"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "htmlpp",
+            "scopeName": "*.htmlpp",
+            "path": "./syntaxes/htmlpp.tmLanguage.json"
+        }]
+    },
+    "publisher": "mopires-htmlpp",
+    "repository": "https://github.com/mopires/htmlpp-syntax-highlighter-vsce"
+}
