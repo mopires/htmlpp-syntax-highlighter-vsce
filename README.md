@@ -1,9 +1,12 @@
 # HTML++ Syntax highlight
 
+Syntax highlighter for [HTMLPP](https://github.com/mopires/htmlpp)!
+
 Modern way to write HTML. The concept remains the same, but without the "< > </>", like Sass, but different.
 
 So far HTML++ use single quote ' to set a value in an attribute (Ex: class='col-12'). In this extension you can use double quote on the attributes but it will return an error when you build.
 
+Install HTMLPP with:
 > npm i htmlpp-com-github-mopires
 
 ### For more information
